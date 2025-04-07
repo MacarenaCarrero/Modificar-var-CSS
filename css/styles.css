@@ -22,3 +22,11 @@ body {
   margin: 0;
   font-family: sans-serif;
 }
+.redBox{
+  background-color: red;
+}
+.boxMouse{
+  width: 20px;
+  height: 20px;
+  background-color: orange;
+}
