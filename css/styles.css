@@ -18,12 +18,27 @@ nav ul {
   margin-top: 0;
   margin-bottom: 0;
 }
+
+ :root{
+--box-x:0;
+--box-y:0;
+--bg-color:black;
+
+}
+
 body {
   margin: 0;
   font-family: sans-serif;
+  height: 500vh;
+  background-color:var(--bg-color);
 }
+
+
 .redBox{
+  position: fixed;
   background-color: red;
+  height: 30px;
+  width: var(--box-x);
 }
 .boxMouse{
   width: 20px;
