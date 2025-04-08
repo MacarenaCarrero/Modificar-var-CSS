@@ -19,29 +19,37 @@ nav ul {
   margin-bottom: 0;
 }
 
- :root{
---box-x:0;
---box-y:0;
---bg-color:black;
-
+:root {
+  --box-x: 0;
+  --box-y: 0;
+  --bg-color: black;
 }
 
 body {
   margin: 0;
   font-family: sans-serif;
   height: 500vh;
-  background-color:var(--bg-color);
+  background-color: var(--bg-color);
 }
 
-
-.redBox{
+.redBox {
   position: fixed;
-  background-color: red;
+  background-color: #f50000;
   height: 30px;
   width: var(--box-x);
 }
-.boxMouse{
-  width: 20px;
-  height: 20px;
- background-color: orange;
+.boxMouse {
+  position: fixed;
+  top: var(--box-y);
+  left: var(--box-x);
+  width: 50px;
+  height: 50px;
+
+  background-image: url(../assets/pack2662\ 2.png);
+  background-size: contain;
+  pointer-events: none;
+}
+.buttons {
+  position: relative;
+  top: 50px;
 }
